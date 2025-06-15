@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'MagicalDemo';
+  src: url('/magical-demo/Magical Demo.otf') format('opentype');
+  font-feature-settings: "liga" 0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'MagicalDemo', sans-serif;
+  overflow: hidden;
+}
+
+.home-container {
+  background-image: url("/public/group.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+
+.form-box {
+  position: absolute;
+  bottom: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  box-shadow: 0 0 15px #9f7aea;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.form-box input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+  margin-right: 10px;
+  font-family: 'MagicalDemo', sans-serif;
+  font-feature-settings: "liga" 0;
+
+}
+
+.form-box button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #9f7aea;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'MagicalDemo', sans-serif;
+  font-feature-settings: "liga" 0;
+  font-size: 30px;
+
+}
+
+.form-box button:hover {
+  background-color: #6b46c1;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
